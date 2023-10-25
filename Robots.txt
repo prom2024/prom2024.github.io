@@ -1,0 +1,4 @@
+User-agent: * 
+Disallow: 
+Host: https://prom2024.github.io/
+Sitemap: https://github.com/prom2024/prom2024.github.io/blob/main/sitemap.xml
