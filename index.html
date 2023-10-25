@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Мой сайт</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="lightgallery.min.css">
+    <link rel="stylesheet" href="lg-transitions.min.css">
+</head>
+
+<body>
+    <section class="first-screen section-bg">
+        <div class="container">
+        </div>
+    </section>
+    <a class="chevron" onclick="smoothScroll('#down')" href="#">
+        <img src="st.png" alt="scroll">
+    </a>
+    <section>
+        <div class="container">
+            <h2 id="about">О нас</h2>
+            <p>
+                Более 13 лет ВБУНКЕРЕ оказывает качественные услуги для Ваших автомобилей в Санкт-Петербурге! Мы используем исключительно качественные материалы. Наши мастера профессионалы с большой буквы! Мы искренне любим свою работу и делаем ее «на отлично», чтобы
+                Вы могли смело рекомендовать нас своим друзьям и знакомым.Наш подход к работе и помещения.
+
+            </p><img class="section_img_logo" src="Screenshot_4.png">
+        </div>
+    </section>
+    <section class="skills">
+        <div class="container">
+            <h2>Услуги</h2>
+            <ul class="skills__images">
+                <li class="skills__list"><img src="111111.jpg" alt="" class="skills__item-img" width="450px">ПОЛИРОВКА</li>
+                <li class="skills__list"><img src="222222.jpg" alt="" class="skills__item-img" width="450px">ТОНИРОВКА</li>
+                <li class="skills__list"><img src="444444.jpg" alt="" class="skills__item-img" width="450px">ХИМЧИСТКА</li>
+            </ul>
+            <h2>Наши мастера</h2>
+            <ul class="skills__images">
+                <li class="skills__list"><img src="123.jpg" alt="" class="skills__item-img">ИЛЬЯ АЛЕКСАНДРОВИЧ</li>
+                <li class="skills__list"><img src="321.jpg" alt="" class="skills__item-img">АРТУР МАКСИМОВИЧ</li>
+                <li class="skills__list"><img src="1234.jpg" alt="" class="skills__item-img">АЗИМ ФАЗИЛЬЕВИЧ</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section-bg">
+        <div class="container">
+            <div class="d-flex">
+                <div class="w-60 pr-4">
+
+                </div>
+                <div class="w-40">
+                    <form>
+                        <input type="text" placeholder="Как к вам обращаться">
+                        <input type="email" placeholder="Ваш email">
+                        <textarea rows="4" placeholder="Сообщение"></textarea>
+                        <input class="btn btn-bg" type="submit" value="Отправить">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="down">
+        <div class="container">
+            Copyright &copy; 2022. Все права защищены.
+        </div>
+    </footer>
+    <script src="lightgallery.min.js"></script>
+    <script>
+        lightGallery(document.getElementById('lightgallery'));
+    </script>
+    <script>
+        function smoothScroll(selector) {
+            event.preventDefault();
+
+            document.querySelector(selector).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    </script>
+
+</body>
+
+</html>
+
+</html>
